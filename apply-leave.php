@@ -38,24 +38,18 @@ else
 {
 $error="Something went wrong. Please try again";
 }
-
 }
-
     ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <!-- Title -->
         <title>Employe | Apply Leave</title>
-        
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta charset="UTF-8">
         <meta name="description" content="Responsive Admin Dashboard Template" />
         <meta name="keywords" content="admin,dashboard" />
         <meta name="author" content="Steelcoders" />
-        
         <!-- Styles -->
         <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"/>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -80,13 +74,9 @@ $error="Something went wrong. Please try again";
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 }
         </style>
- 
-
-
     </head>
     <body>
   <?php include('includes/header.php');?>
-            
        <?php include('includes/sidebar.php');?>
    <main class="mn-inner">
                 <div class="row">
@@ -106,8 +96,6 @@ $error="Something went wrong. Please try again";
                                                         <div class="row">
      <?php if($error){?><div class="errorWrap"><strong>ERROR </strong>:<?php echo htmlentities($error); ?> </div><?php } 
                 else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
-
-
  <div class="input-field col  s12">
 <select  name="leavetype" autocomplete="off">
 <option value="">Select leave type...</option>
@@ -124,8 +112,6 @@ foreach($results as $result)
 <?php }} ?>
 </select>
 </div>
-
-
 <div class="input-field col m6 s12">
 <label for="fromdate">From  Date</label>
 <input placeholder="" id="mask1" name="fromdate" class="masked" type="text" data-inputmask="'alias': 'date'" required>
@@ -136,17 +122,13 @@ foreach($results as $result)
 </div>
 <div class="input-field col m12 s12">
 <label for="birthdate">Description</label>    
-
 <textarea id="textarea1" name="description" class="materialize-textarea" length="500" required></textarea>
 </div>
 </div>
       <button type="submit" name="apply" id="apply" class="waves-effect waves-light btn indigo m-b-xs">Apply</button>                                             
-
                                                 </div>
                                             </div>
                                         </section>
-                                     
-                                    
                                         </section>
                                     </div>
                                 </form>
@@ -157,7 +139,6 @@ foreach($results as $result)
             </main>
         </div>
         <div class="left-sidebar-hover"></div>
-        
         <!-- Javascripts -->
         <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
         <script src="assets/plugins/materialize/js/materialize.min.js"></script>

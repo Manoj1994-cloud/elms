@@ -104,7 +104,7 @@ else{
         </div>
         <div class="mn-content fixed-sidebar">
             <header class="mn-header navbar-fixed">
-                <nav class="cyan darken-1">
+                <nav class="cyan darken-1" style="background: linear-gradient(to right, #ff512f, #f09819);">
                     <div class="nav-wrapper row">
                         <section class="material-design-hamburger navigation-toggle">
                             <a href="#" data-activates="slide-out" class="button-collapse show-on-large material-design-hamburger__icon">
@@ -120,6 +120,7 @@ else{
                      
                         
                     </div>
+                    
                 </nav>
             </header>
            
